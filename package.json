@@ -6,7 +6,7 @@
     "url": "git+https://github.com/Ppppia/wetube-lecture.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/init.js"
   },
   "license": "ISC",
   "bugs": {
@@ -15,13 +15,14 @@
   "homepage": "https://github.com/Ppppia/wetube-lecture#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "mongoose": "^6.7.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/node": "^7.19.1",
     "@babel/preset-env": "^7.19.4",
     "nodemon": "^2.0.20"
-  },
-  "type": "module"
+  }
 }
