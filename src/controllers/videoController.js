@@ -24,7 +24,7 @@ export const getEdit = async (req, res) => {
     user: { _id },
   } = req.session;
   const video = await Video.findById(id);
-  if (video === null) {
+  if (!video) {
     return res.status(404).render("404", { pageTitle: "Video not found." });
   }
   if (String(video.owner) !== String(_id)) {
@@ -40,10 +40,12 @@ export const postEdit = async (req, res) => {
   } = req.session;
   const { id } = req.params;
   const { title, description, hashtags } = req.body;
-  const video = await Video.exists({ _id: id });
-  if (!video) {
+  const videoId = await Video.exists({ _id: id });
+  if (!videoId) {
     return res.status(404).render("404", { pageTitle: "Video not found." });
   }
+
+  const video = await Video.findById(id);
   if (String(video.owner) !== String(_id)) {
     req.flash(
       "info",
@@ -51,6 +53,7 @@ export const postEdit = async (req, res) => {
     );
     return res.status(403).redirect("/");
   }
+
   await Video.findByIdAndUpdate(id, {
     title,
     description,
@@ -69,7 +72,6 @@ export const postUpload = async (req, res) => {
     user: { _id },
   } = req.session;
   const { video, thumb } = req.files;
-  console.log(video, thumb);
   const { title, description, hashtags } = req.body;
   try {
     const newVideo = await Video.create({
@@ -154,21 +156,29 @@ export const createComment = async (req, res) => {
 
 export const deleteComment = async (req, res) => {
   const {
-    params: { id },
+    params: { id: commentId },
+  } = req;
+  const {
     session: {
-      user: { _id },
+      user: { _id: userId },
     },
   } = req;
-  const comment = await Comment.findById(id).populate("video");
-
-  if (!comment) {
-    return res.render("404", { pageTitle: "comment not found" });
-  }
-  if (String(comment.video.owner) !== String(_id)) {
+  const comment = await Comment.findById(commentId)
+    .populate("owner")
+    .populate("video");
+  const video = comment.video;
+  const user = await User.findById(userId);
+  if (String(userId) !== String(comment.owner._id)) {
     return res.sendStatus(404);
   }
-  await Comment.findByIdAndDelete(id);
-  comment.video.comments.splice(comment.video.comments.indexOf(id), 1);
-  comment.video.save();
-  return res.sendStatus(201);
+  if (!video) {
+    return res.sendStatus(404);
+  }
+
+  user.comments.splice(user.comments.indexOf(commentId), 1);
+  await user.save();
+  video.comments.splice(video.comments.indexOf(commentId), 1);
+  await video.save();
+  await Comment.findByIdAndRemove(commentId);
+  return res.status(201);
 };

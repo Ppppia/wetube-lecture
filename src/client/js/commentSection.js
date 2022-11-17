@@ -49,12 +49,10 @@ if (form) {
 const handleDelete = async (event) => {
   const li = event.target.parentElement;
   const commentId = event.target.parentElement.dataset.id;
+  li.remove();
   const response = await fetch(`/api/comments/${commentId}`, {
     method: "DELETE",
   });
-  if (response.status === 201) {
-    li.remove();
-  }
 };
 
 if (deleteBtn) {

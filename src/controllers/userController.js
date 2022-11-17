@@ -1,5 +1,4 @@
 import User from "../models/User";
-import Video from "../models/Video";
 import fetch from "node-fetch";
 import bcrypt from "bcrypt";
 
@@ -182,7 +181,7 @@ export const postEdit = async (req, res) => {
     { new: true }
   );
   req.session.user = updatedUser;
-  return res.redirect("/users/edit");
+  return res.redirect("/");
 };
 
 export const getChangePassword = (req, res) => {
