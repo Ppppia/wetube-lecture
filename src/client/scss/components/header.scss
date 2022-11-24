@@ -31,12 +31,14 @@ header {
     padding: 5px;
     justify-self: center;
     width: 100%;
-    border-radius: 50%;
+    input {
+      border-radius: 50%;
+    }
     .search__btn {
       width: 3em;
       border: 1px solid rgba($color: $bg, $alpha: 0.2);
       background-color: rgba(240, 240, 240, 0.74);
-      height: 100%;
+      padding: 20px auto;
     }
   }
 
