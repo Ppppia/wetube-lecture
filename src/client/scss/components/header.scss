@@ -31,12 +31,12 @@ header {
     align-items: center;
     padding: 5px;
     justify-self: center;
-    width: 100%;
+    width: 85%;
 
     .search__btn {
       border: none;
       border-radius: 0 45px 45px 0;
-      background-color: rgba(206, 204, 204, 0.907);
+      background-color: rgb(192, 191, 191);
       color: rgba(0, 0, 0, 0.7);
       height: 28px;
       width: 60px;
@@ -44,7 +44,7 @@ header {
       cursor: pointer;
     }
     .search__btn:hover {
-      background-color: rgba(0, 0, 0, 0.324);
+      background-color: rgba(0, 0, 0, 0.5);
       transition: ease 0.4s;
     }
   }
