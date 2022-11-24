@@ -21,16 +21,17 @@ header {
   }
 
   form {
-    max-width: 250px;
+    max-width: 450px;
     margin: 0px 20px;
     box-shadow: none;
     background: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 5px;
     justify-self: center;
     width: 100%;
-    input.search__button {
+    button {
       width: 3em;
       border: 1px solid rgba($color: $bg, $alpha: 0.2);
       background-color: rgba(240, 240, 240, 0.74);
