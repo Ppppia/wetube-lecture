@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:wght@400;500&display=swap");
+
 // config
 @import "./config/_variables.scss";
 @import "./config/_reset.scss";
@@ -27,8 +29,8 @@ a {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: white;
   color: black;
 }

@@ -3,12 +3,12 @@ header
         i.fab.fa-youtube
         div WeTube
     nav 
-        a(href="/search")
-        include ./search
         ul 
             li 
-                a(href="/")  Home 
-                
+                a(href="/search")  
+                    i.fas.fa-search
+            li 
+                a(href="/") Home
             if loggedIn
                 li 
                     a(href="/users/logout") Log Out  
