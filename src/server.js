@@ -31,6 +31,13 @@ app.use(localsMiddleware);
 app.use("/uploads", express.static("uploads"));
 app.use("/static", express.static("assets"));
 
+const corsOptions = {
+  origin: "https://wetube-ppppia.herokuapp.com",
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.header("Cross-Origin-Opener-Policy", "same-origin");
