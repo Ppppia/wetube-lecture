@@ -12,13 +12,31 @@ header {
       font-size: 42px;
     }
     div {
-      font-size: 32px;
+      font-size: 34px;
       float: right;
       padding-left: 10px;
       color: black;
       font-family: "Oswald", sans-serif;
     }
   }
+
+  form {
+    max-width: 450px !important;
+    margin: 0px 20px;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-self: center;
+    width: 100%;
+    input.search__button {
+      width: 3em;
+      border: 1px solid rgba($color: $bg, $alpha: 0.7);
+      background-color: rgba(240, 240, 240, 0.74) !important;
+    }
+  }
+
   ul {
     display: flex;
     justify-content: space-between;
