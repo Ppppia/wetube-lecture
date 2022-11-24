@@ -21,7 +21,7 @@ header {
   }
 
   form {
-    max-width: 450px !important;
+    max-width: 250px;
     margin: 0px 20px;
     box-shadow: none;
     background: none;
@@ -32,8 +32,8 @@ header {
     width: 100%;
     input.search__button {
       width: 3em;
-      border: 1px solid rgba($color: $bg, $alpha: 0.7);
-      background-color: rgba(240, 240, 240, 0.74) !important;
+      border: 1px solid rgba($color: $bg, $alpha: 0.2);
+      background-color: rgba(240, 240, 240, 0.74);
     }
   }
 
