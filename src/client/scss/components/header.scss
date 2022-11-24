@@ -31,20 +31,20 @@ header {
     align-items: center;
     padding: 5px;
     justify-self: center;
+    width: 100%;
 
     .search__btn {
       border: none;
       border-radius: 0 45px 45px 0;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(206, 204, 204, 0.907);
       color: rgba(255, 255, 255, 0.7);
-      height: 25px;
+      height: 28px;
       width: 60px;
       padding: 12px;
       cursor: pointer;
     }
     .search__btn:hover {
-      font-weight: bold;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.324);
       transition: ease 0.4s;
     }
   }
