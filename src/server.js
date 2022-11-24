@@ -32,12 +32,10 @@ app.use("/uploads", express.static("uploads"));
 app.use("/static", express.static("assets"));
 
 app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.header("Cross-Origin-Opener-Policy", "same-origin");
   res.header("Cross-Origin-Embedder-Policy", "credentialless");
-  res.setHeader(
-    "Access-Control-Allow-Origin: https://wetube-ppppia.herokuapp.com"
-  );
-  res.header("Access-Control-Allow-Credentials", true);
+  res.header("Access-Control-Allow-Headers");
   res.header("Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
