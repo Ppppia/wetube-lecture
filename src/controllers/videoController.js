@@ -136,6 +136,7 @@ export const registerView = async (req, res) => {
 };
 
 export const createComment = async (req, res) => {
+  event.preventDefault();
   const {
     session: { user },
     body: { text },

@@ -22,7 +22,7 @@ header {
 
   .search__form {
     border-radius: 45px 0 0 45px;
-    max-width: 480px;
+    max-width: 520px;
     margin: 0px 20px;
     box-shadow: none;
     background: none;
@@ -36,11 +36,12 @@ header {
     .search__btn {
       border: none;
       border-radius: 0 45px 45px 0;
-      background-color: rgb(192, 191, 191);
+      background-color: rgb(205, 205, 205);
       color: rgba(0, 0, 0, 0.7);
       height: 28px;
-      width: 60px;
-      padding: 5px;
+      width: 65px;
+      padding: 10px;
+
       cursor: pointer;
     }
     .search__btn:hover {
