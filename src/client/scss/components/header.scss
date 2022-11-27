@@ -26,14 +26,14 @@ header {
     box-shadow: none;
     background: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 5px;
-    justify-self: center;
-    width: 88%;
+
+    width: 86%;
     .search__bar {
       border-radius: 45px 0 0 45px;
       width: 70%;
+      margin-right: 3px;
     }
 
     .search__btn {
