@@ -31,7 +31,7 @@ header {
     width: 100%;
     .search__bar {
       border-radius: 45px 0 0 45px;
-      width: 67%;
+      width: 69%;
       margin-right: 3px;
     }
 
@@ -47,7 +47,7 @@ header {
       cursor: pointer;
     }
     .search__btn:hover {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgb(233, 233, 233);
       transition: ease 0.4s;
     }
   }
