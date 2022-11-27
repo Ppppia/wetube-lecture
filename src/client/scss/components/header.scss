@@ -21,7 +21,6 @@ header {
   }
 
   .search__form {
-    border-radius: 45px 0 0 45px;
     max-width: 520px;
     margin: 0px 20px 0px 10px;
     box-shadow: none;
@@ -31,6 +30,7 @@ header {
     align-items: center;
     padding: 5px;
     justify-self: center;
+    width: 88%;
     .search__bar {
       border-radius: 45px 0 0 45px;
       width: 70%;
