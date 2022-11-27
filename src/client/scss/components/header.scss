@@ -27,7 +27,6 @@ header {
     background: none;
     display: flex;
     align-items: center;
-    height: 20px;
     width: 100%;
     .search__bar {
       border-radius: 45px 0 0 45px;
@@ -41,7 +40,8 @@ header {
       background-color: rgb(240, 240, 240);
       color: rgba(0, 0, 0, 0.7);
       width: 59px;
-      padding: 5px;
+      height: 20px;
+
       cursor: pointer;
     }
     .search__btn:hover {
