@@ -23,7 +23,7 @@ header {
   .search__form {
     border-radius: 45px 0 0 45px;
     max-width: 520px;
-    margin: 0px 20px;
+    margin: 0px 20px 0px 10px;
     box-shadow: none;
     background: none;
     display: flex;
@@ -31,7 +31,11 @@ header {
     align-items: center;
     padding: 5px;
     justify-self: center;
-    width: 85%;
+    width: 80%;
+    .search__bar {
+      border-radius: 45px 0 0 45px;
+      width: 80%;
+    }
 
     .search__btn {
       border: none;
@@ -39,7 +43,7 @@ header {
       background-color: rgb(205, 205, 205);
       color: rgba(0, 0, 0, 0.7);
       height: 28px;
-      width: 65px;
+      width: 60px;
       padding: 10px;
 
       cursor: pointer;
