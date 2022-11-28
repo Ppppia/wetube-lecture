@@ -26,6 +26,7 @@ input:not(input[type="range"]) {
 }
 
 input[type="submit"] {
+  border: none !important;
   background-color: $red !important;
   color: white !important;
 }
