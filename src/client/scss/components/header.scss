@@ -15,7 +15,7 @@ header {
       font-size: 34px;
       float: right;
       padding-left: 10px;
-      color: black;
+      color: $black;
       font-family: "Oswald", sans-serif;
     }
   }
@@ -65,7 +65,7 @@ header {
     }
   }
   .header__btn {
-    background-color: white;
+    background-color: $red;
     color: $bg;
     padding: 5px 10px;
     border-radius: 5px;
