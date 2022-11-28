@@ -12,14 +12,17 @@ input[type="submit"] {
   all: unset;
   padding: 10px 20px;
   border: 1.2px solid rgb(200, 200, 200);
-  background-color: white;
   margin-bottom: 5px;
   font-size: 16px;
-  color: white;
-
+  text-align: center;
   &::placeholder {
     color: rgba($color: $black, $alpha: 0.7);
   }
+}
+
+input:not(input[type="range"]) {
+  background-color: white;
+  color: $black;
 }
 
 input[type="submit"] {
@@ -31,8 +34,6 @@ input[type="submit"],
 .social__btn {
   border-radius: 5px;
   padding: 12px 20px;
-  background-color: white !important;
-  color: rgba($color: $red, $alpha: 1) !important;
   text-align: center !important;
   cursor: pointer;
   display: block;
