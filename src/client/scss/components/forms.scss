@@ -18,7 +18,7 @@ input[type="submit"] {
   color: white;
 
   &::placeholder {
-    color: $black;
+    color: rgba($color: $black, $alpha: 0.7);
   }
 }
 
