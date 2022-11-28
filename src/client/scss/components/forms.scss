@@ -22,6 +22,11 @@ input[type="submit"] {
   }
 }
 
+input[type="submit"] {
+  background-color: $red;
+  color: white;
+}
+
 input[type="submit"],
 .social__btn {
   border-radius: 5px;
