@@ -25,7 +25,9 @@ block content
         p.video__createInfo
             div.video__ownerContainer
                 img(src=video.owner.avatarUrl, crossorigin).video__avatar
+                    a(href=`/users/${video.owner._id}`)=video.owner.name
             div.video__owername #{video.owner.username} 
+                a(href=`/users/${video.owner._id}`)=video.owner.name
             small.video__subscribe 구독자 1명
         hr
         div.video__ownerComment
