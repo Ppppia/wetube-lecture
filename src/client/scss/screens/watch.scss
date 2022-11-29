@@ -40,19 +40,19 @@
     margin-bottom: 5px;
     a {
       color: $black;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: bold;
     }
   }
   .video__subscribe {
-    font-size: 10px;
+    font-size: 8px;
     color: $grey;
   }
 }
 
 .video__ownerComment {
   background-color: rgb(242, 242, 242);
-  width: 100%;
+  width: 90%;
   padding: 15px;
   border-radius: 8px;
   .video-views,
