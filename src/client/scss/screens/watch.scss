@@ -53,17 +53,21 @@
 }
 
 .video__ownerComment {
-  background-color: $black;
-  opacity: 0.4;
+  background-color: rgb(242, 242, 242);
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 25px;
   .video-views,
   .video-createdAt {
     font-weight: bold;
   }
   .video__description {
-    margin-top: 3px;
+    margin-top: 5px;
   }
+}
+
+.video__ownerComment:hover {
+  background-color: rgb(231, 231, 231);
 }
 
 .video__comments {
@@ -77,7 +81,7 @@
     padding: 10px;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
     color: $black;
     margin-bottom: 10px;
   }
