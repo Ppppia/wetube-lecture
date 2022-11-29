@@ -28,8 +28,8 @@ block content
                     img(src=video.owner.avatarUrl, crossorigin).video__avatar
                     
             div.video__owername
-                a(href=`/users/${video.owner._id}`)=video.owner.username
-            small.video__subscribe #{video.meta.views} subscribers
+                    a(href=`/users/${video.owner._id}`)=video.owner.username
+                small.video__subscribe #{video.meta.views} subscribers
         hr
         div.video__ownerComment
             span.video-views #{video.meta.views} views |  
