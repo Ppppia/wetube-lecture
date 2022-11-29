@@ -53,6 +53,7 @@
 }
 
 .video__ownerComment {
+  line-height: 1.3rem;
   font-size: 14px;
   background-color: rgb(242, 242, 242);
   width: 97.5%;
@@ -63,8 +64,6 @@
     font-weight: bold;
   }
   .video__description {
-    margin-top: 8px;
-    line-height: 1.4rem;
   }
 }
 
