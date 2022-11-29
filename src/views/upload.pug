@@ -7,7 +7,7 @@ block content
             button#actionBtn.social__btn Start Recording
         if errorMessage
             span=errorMessage
-        form(method="POST", enctype="multipart/form-data")
+        form(method="POST", enctype="multipart/form-data").video-upload__form
             label(for="video") Video File
             input(type="file", accept="video/*", required, id="video", name="video")
             label(for="thumb") Thumbnail File
