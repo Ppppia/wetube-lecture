@@ -5,7 +5,7 @@
     border-radius: 15px;
     width: 100%;
     background-color: ivory;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .video-mixin__data {
     padding: 0px 15px;
@@ -32,6 +32,7 @@
 .video-mixin__title {
   font-size: 16px;
   color: $black;
+  font-weight: bold;
 }
 
 .video-mixin-views {
@@ -45,7 +46,7 @@
 
 .video-upload__form {
   label {
-    font-size: 13px;
+    font-size: 16px;
     font-style: italic;
     font-weight: bold;
     margin: 8px 0;
