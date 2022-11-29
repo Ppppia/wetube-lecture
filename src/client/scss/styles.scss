@@ -65,8 +65,10 @@ main {
   text-align: center;
   animation: goAway 0.5s ease-in-out forwards;
   animation-delay: 5s;
-  &.error {
+  &.error,
+  &.info,
+  &.sucess {
     background-color: $red;
-    color: $black;
+    color: white;
   }
 }
