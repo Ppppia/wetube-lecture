@@ -7,5 +7,5 @@ mixin video(video)
             div.video-mixin__meta
                 div.video-mixin__title=video.title
                 div.video-mixin__owername #{video.owner.username} 
-                div.video-mixin-views #{video.meta.views} views • 
+                div.video-mixin-views #{video.meta.views} views |  
                     span.video-mixin-createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})
