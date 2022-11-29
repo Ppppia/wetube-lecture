@@ -24,12 +24,12 @@ block content
         p.video__title=video.title
         p.video__createInfo
             div.video__ownerContainer
-                a(href=`/users/${video.owner._id}`)=video.owner.name
+                a(href=`/users/${video.owner._id}`)
                     img(src=video.owner.avatarUrl, crossorigin).video__avatar
                     
-            div.video__owername #{video.owner.username} 
-                a(href=`/users/${video.owner._id}`)=video.owner.name
-            small.video__subscribe 구독자 1명
+            div.video__owername
+                a(href=`/users/${video.owner._id}`)=video.owner.username
+            small.video__subscribe #{video.meta.views} subscribers
         hr
         div.video__ownerComment
             span.video-views #{video.meta.views} views |  

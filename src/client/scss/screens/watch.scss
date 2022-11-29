@@ -10,7 +10,7 @@
   .video__hashtags {
     font-size: 14px;
     color: rgb(22, 103, 255);
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   .video-mixin-views {
@@ -26,16 +26,14 @@
 .video__ownerContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
   .video__avatar {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    background-color: cornflowerblue;
+    margin-top: 5px 10px 5px 0;
+    background-color: rgb(66, 124, 220);
     float: left;
+    display: flex;
   }
   .video__owername {
     margin: 10px;
@@ -55,14 +53,14 @@
 .video__ownerComment {
   background-color: rgb(242, 242, 242);
   width: 100%;
-  padding: 10px;
-  border-radius: 25px;
+  padding: 15px;
+  border-radius: 8px;
   .video-views,
   .video-createdAt {
     font-weight: bold;
   }
   .video__description {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 }
 
