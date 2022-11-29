@@ -25,12 +25,12 @@ block content
         p.video__createInfo
             div.video__ownerContainer
                 img(src=video.owner.avatarUrl, crossorigin).video__avatar
-            div.video-mixin__owername #{video.owner.username} 
+            div.video__owername #{video.owner.username} 
             small.video__subscribe 구독자 1명
         hr
-        div.video__ownComment
-            span.video-mixin-views #{video.meta.views} views |  
-            span.video-mixin-createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})
+        div.video__ownerComment
+            span.video-views #{video.meta.views} views |  
+            span.video-createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})
             p.video__description=video.description
         hr
         if String(video.owner._id) === String(loggedInUser._id)
