@@ -20,10 +20,19 @@ block content
                 span#fullScreen
                     i.fas.fa-expand
     div.video__data
+        p.video__hashtags=video.hashtags
         p.video__title=video.title
-        small.video__owner Uploaded by 
-            a(href=`/users/${video.owner._id}`)=video.owner.name
-        small.video__createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+        p.video__createInfo
+            div.video__ownerContainer
+                img(src=video.owner.avatarUrl, crossorigin).video__avatar
+            div.video-mixin__owername #{video.owner.username} 
+            small.video__subscribe 구독자 1명
+        hr
+        div.video__ownComment
+            span.video-mixin-views #{video.meta.views} views |  
+            span.video-mixin-createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})
+            p.video__description=video.description
+        hr
         if String(video.owner._id) === String(loggedInUser._id)
             a(href=`${video.id}/edit`) Edit Video &rarr; 
             br 
