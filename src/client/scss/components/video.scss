@@ -5,6 +5,7 @@
     border-radius: 15px;
     width: 100%;
     background-color: ivory;
+    margin-bottom: 50px;
   }
   .video-mixin__data {
     padding: 0px 15px;
@@ -44,8 +45,9 @@
 
 .video-upload__form {
   label {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+    margin: 8px 0;
     display: block;
   }
 }
