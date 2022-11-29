@@ -22,14 +22,14 @@ block content
     div.video__data
         p.video__hashtags=video.hashtags
         p.video__title=video.title
-        p.video__createInfo
+        div.video__createInfo
             div.video__ownerContainer
                 a(href=`/users/${video.owner._id}`)
                     img(src=video.owner.avatarUrl, crossorigin).video__avatar
                     
             div.video__owername
                 a(href=`/users/${video.owner._id}`)=video.owner.username
-                small.video__subscribe #{video.meta.views} subscribers
+            small.video__subscribe #{video.meta.views} subscribers
         hr
         div.video__ownerComment
             span.video-views #{video.meta.views} views |  
