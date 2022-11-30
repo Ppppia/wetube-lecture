@@ -51,9 +51,6 @@
     }
   }
   .video__icons {
-    display: flex;
-    flex-direction: row;
-    float: right;
     margin-top: 5px;
     margin-left: 5px;
   }
@@ -63,6 +60,9 @@
     font-size: 16px;
     background-color: $btngrey;
     border-radius: 25px;
+  }
+  .video__icons i :first-child {
+    margin-left: 475px;
   }
   .video__icons a {
     margin: 0 5px;
