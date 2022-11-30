@@ -32,6 +32,14 @@ block content
                 span.video__subscribe #{video.meta.views} subscribers
           
             fieldset.video__icons
+                    i.far.fa-thumbs-up 
+                        span Like
+                    i.far.fa-thumbs-down  
+                        span Dislike
+                    i.fas.fa-share  
+                        span Share
+                    i.fas.fa-long-arrow-alt-down  
+                        span Download
                 if String(video.owner._id) === String(loggedInUser._id)
                     i.fas.fa-pen
                         a(href=`${video.id}/edit`)
@@ -40,23 +48,8 @@ block content
                         a(href=`${video.id}/delete`)
                             span Delete
                     span.line |
-                    i.far.fa-thumbs-up 
-                        span Like
-                    i.far.fa-thumbs-down  
-                        span Dislike
-                    i.fas.fa-share  
-                        span Share
-                    i.fas.fa-long-arrow-alt-down  
-                        span Download
-                else
-                    i.far.fa-thumbs-up 
-                        span Like
-                    i.far.fa-thumbs-down  
-                        span Dislike
-                    i.fas.fa-share  
-                        span Share
-                    i.fas.fa-long-arrow-alt-down  
-                        span Download
+
+
 
         hr
         div.video__ownerComment

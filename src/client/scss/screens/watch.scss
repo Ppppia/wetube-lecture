@@ -61,9 +61,6 @@
     background-color: $btngrey;
     border-radius: 25px;
   }
-  .video__icons:first-child {
-    margin-left: 475px;
-  }
   .video__icons a {
     margin: 0 5px;
     font-size: 16px;
@@ -75,9 +72,9 @@
   }
 }
 .line {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0 5px;
 }
 
