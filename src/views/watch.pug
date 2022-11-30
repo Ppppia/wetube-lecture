@@ -69,7 +69,7 @@ block content
                     div
                         img(src= comment.owner.avatarUrl, crossorigin).comments__avatar
                     div
-                    span.comment__owner #{comment.owner.username}          
+                    span.comment__owner #{comment.owner}          
                     span.comment__createdAt #{comment.createdAt.toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})}
                     span.comment__text #{comment.text}
                     if String(comment.owner._id) === String(loggedInUser._id)
