@@ -80,7 +80,6 @@
 .line,
 .sectionDivider {
   color: $grey;
-  background-color: $btngrey;
   font-size: 25px !important;
   font-weight: lighter !important;
   margin: 0 5px;
@@ -117,6 +116,7 @@
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+  background-color: ivory;
 }
 
 .video__add-comments {
