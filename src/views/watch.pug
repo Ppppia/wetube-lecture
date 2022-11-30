@@ -40,8 +40,8 @@ block content
                 i.fas.fa-long-arrow-alt-down  
                     span Download
                 if String(video.owner._id) === String(loggedInUser._id)
-                    i.fas.fa-pen
-                        a(href=`${video.id}/edit`)
+                    a(href=`${video.id}/edit`)
+                        i.fas.fa-pen
                         span Edit
                     i.fas.fa-trash
                         a(href=`${video.id}/delete`)
