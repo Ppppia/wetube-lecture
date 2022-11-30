@@ -61,7 +61,7 @@
     background-color: $btngrey;
     border-radius: 25px;
   }
-  .video__icons i :first-child {
+  .video__icons:first-child {
     margin-left: 475px;
   }
   .video__icons a {
@@ -73,6 +73,12 @@
     font-size: 15px;
     padding: 12px 0;
   }
+}
+.line {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 5px;
 }
 
 .video__ownerComment {
