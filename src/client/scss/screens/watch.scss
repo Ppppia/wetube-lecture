@@ -106,15 +106,14 @@
 }
 
 .comments__avatar {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
-  margin-top: 5px;
 }
 
 .video__add-comments {
-  margin-left: 10px;
+  margin-left: 15px;
   .video__comment-form {
     display: flex;
     align-items: center;
@@ -135,15 +134,19 @@
 }
 
 .video__comment-form__btn {
-  appearance: none;
-  border-radius: 4px;
+  all: unset;
+  border-radius: 25px;
   border: none;
-  margin-left: 20px;
-  font-size: 16px;
-  background-color: rgb(89, 178, 255);
-  padding: 10px 20px;
-  color: #030303;
+  font-size: 14px;
+  background-color: $btngrey;
+  padding: 5px;
+  color: $black;
   cursor: pointer;
+}
+.video__comment-form__btn:hover {
+  background-color: #3f51b5;
+  color: white;
+  transition-duration: 2s;
 }
 
 .video__comment {
@@ -151,7 +154,7 @@
   align-items: center;
   overflow: hidden;
   font-size: 14px;
-  color: #ffffff;
+  color: $black;
   margin: 20px 0;
   i.fas.fa-xmark {
     margin-left: 20px;
