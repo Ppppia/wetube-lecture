@@ -32,20 +32,20 @@ block content
                 span.video__subscribe #{video.meta.views} subscribers
             div.video__icons
                 i.far.fa-thumbs-up 
-                span Like
+                    span Like
                 i.far.fa-thumbs-down  
-                span Dislike
+                    span Dislike
                 i.fas.fa-share  
-                span Share
+                    span Share
                 i.fas.fa-long-arrow-alt-down  
-                span Download
+                    span Download
                 if String(video.owner._id) === String(loggedInUser._id)
-                    a(href=`${video.id}/edit`)
                     i.fas.fa-pen
                     span Edit
-                    a(href=`${video.id}/delete`)
+                        a(href=`${video.id}/edit`)
                     i.fas.fa-trash
-                    span Delete 
+                    span Delete
+                        a(href=`${video.id}/delete`)
         hr
         div.video__ownerComment
             span.video-views #{video.meta.views} views |   
