@@ -50,10 +50,11 @@
       margin-top: 8px;
     }
   }
-  fieldset {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .video__icons {
+    display: flex !important;
+    flex-direction: row !important;
+    float: right !important;
+    align-items: center !important;
     margin-top: 5px;
     margin-left: 5px;
   }
@@ -77,7 +78,7 @@
 .line {
   color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
-  font-size: 40px;
+  font-size: 40px !important;
   margin: 0 5px;
 }
 
