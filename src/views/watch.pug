@@ -54,13 +54,14 @@ block content
             span.video-views #{video.meta.views} views |   
             span.video-createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})
             p.video__description=video.description
-        hr
+        hr.line
 
     if loggedIn
         div.video__add-comments 
             form.video__comment-form#commentForm
-                textarea(cols="30", rows="10", placeholder="Write a nice comment...")
-                button Add Comment
+                img(src=loggedInUser.avatarUrl, crossorigin).comments__avatar
+                textarea.video__comment-form__text(cols="30", rows="20", placeholder="Write a nice comment..")
+                button.video__comment-form__btn Add comment
     div.video__comments
         ul
             each comment in video.comments.reverse()
