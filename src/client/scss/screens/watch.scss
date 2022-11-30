@@ -86,7 +86,7 @@
 }
 
 .sectionDivider {
-  background-color: $grey;
+  background-color: $btngrey;
 }
 
 .video__ownerComment {
@@ -128,7 +128,7 @@
     border: 0;
   }
   .video__comment-form__text {
-    width: 90%;
+    width: 1000px;
     height: 25px;
     background-color: transparent;
     border: none;
@@ -149,7 +149,7 @@
   padding: 5px 15px;
   color: $black;
   font-weight: bolder;
-  margin-right: 15px;
+  margin-left: 15px;
   cursor: pointer;
 }
 .video__comment-form__btn:hover {
