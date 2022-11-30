@@ -27,8 +27,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 6px;
-  .div.video__ownerContainer {
+  .video__ownerContainer {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
   .video__avatar {
