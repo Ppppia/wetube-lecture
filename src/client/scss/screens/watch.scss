@@ -50,9 +50,10 @@
       margin-top: 8px;
     }
   }
-  .video__icons {
+  fieldset {
     display: flex;
-    margin-right: 2%;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 5px;
     margin-left: 5px;
   }
@@ -74,9 +75,9 @@
   }
 }
 .line {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   margin: 0 5px;
 }
 
