@@ -25,7 +25,7 @@ input:not(input[type="range"]) {
   color: $black;
 }
 input:not(input[type="range"]):focus {
-  background-color: rgba(214, 255, 120, 0.845);
+  background-color: rgba(215, 255, 120, 0.715);
   transition: all 0.6s;
 }
 
