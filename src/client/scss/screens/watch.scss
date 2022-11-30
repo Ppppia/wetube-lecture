@@ -127,11 +127,6 @@
     background-color: transparent;
     border: 0;
   }
-  .textarea {
-    resize: none;
-    width: 600px;
-    height: 20px;
-  }
   .video__comment-form__text {
     background-color: transparent;
     border: none;
@@ -141,6 +136,11 @@
     font-size: 14px;
     line-height: 1.4rem;
   }
+}
+
+.textarea {
+  width: 600px;
+  height: 20px;
 }
 
 .video__comment-form__btn {
