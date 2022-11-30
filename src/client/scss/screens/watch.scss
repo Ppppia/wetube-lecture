@@ -51,8 +51,8 @@
     }
   }
   .video__icons {
-    float: inline-end;
-    justify-content: flex-end;
+    display: flex;
+    float: right;
     margin-top: 8px;
     margin-right: 5px;
   }
