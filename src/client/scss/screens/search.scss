@@ -8,12 +8,14 @@
     padding: 15px 20px;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: $black;
     margin-bottom: 5px;
     font-size: 16px;
-    color: white;
     width: 90%;
     text-align: start !important;
+    input:focus {
+      background-color: none !important;
+      border: 1px solid #3f51b5;
+    }
   }
 
   button {
