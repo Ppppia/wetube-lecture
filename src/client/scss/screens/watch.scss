@@ -25,6 +25,7 @@
 
 .video__createInfo {
   display: flex;
+  justify-content: space-between;
   margin-top: 6px;
   .video__avatar {
     width: 48px;
@@ -53,8 +54,6 @@
   .video__icons {
     margin-top: 5px;
     margin-left: 5px;
-    position: relative;
-    justify-content: flex-end;
   }
 
   .video__icons i {
