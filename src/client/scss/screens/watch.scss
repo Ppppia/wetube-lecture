@@ -48,11 +48,10 @@
       font-size: 12px;
       color: rgb(121, 121, 121) !important;
       margin-top: 8px;
+      margin-right: 200px;
     }
   }
   .video__icons {
-    display: inline-block;
-    justify-items: end;
     margin-top: 5px;
     margin-right: 5px;
   }
@@ -87,6 +86,7 @@
   }
 }
 
+.video__icons i:hover,
 .video__ownerComment:hover {
   background-color: rgb(231, 231, 231);
 }
