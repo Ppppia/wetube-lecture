@@ -54,15 +54,16 @@
     margin-top: 5px;
     margin-left: 5px;
   }
-  .video__icons:first-child {
-    margin-left: 475px !important;
-  }
+
   .video__icons i {
     margin: 0 5px;
     padding: 12px 12px;
     font-size: 16px;
     background-color: $btngrey;
     border-radius: 25px;
+  }
+  .video__icons i:first-child {
+    margin-left: 475px !important;
   }
   .video__icons a {
     margin: 0 5px;
@@ -76,8 +77,8 @@
 }
 .line {
   color: rgba(0, 0, 0, 0.3);
-  font-weight: 400 !important;
-  font-size: 30px !important;
+  font-weight: 300 !important;
+  font-size: 25px !important;
   margin: 0 5px;
 }
 
