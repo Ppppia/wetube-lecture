@@ -31,7 +31,7 @@ block content
                 a(href=`/users/${video.owner._id}`)=video.owner.username
                 span.video__subscribe #{video.meta.views} subscribers
                 span.video__icons
-                i.fas.fa-thumbs-up  
+                i.far.fa-thumbs-up  
                     span Like
                 i.fas.fa-thumbs-down  
                     span Dislike
@@ -44,7 +44,7 @@ block content
                         a(href=`${video.id}/edit`)
                             span Edit
                     i.fas.fa-trash
-                    a(href=`${video.id}/delete`)
+                        a(href=`${video.id}/delete`)
                             span Delete 
         hr
         div.video__ownerComment
