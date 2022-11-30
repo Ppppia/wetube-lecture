@@ -77,12 +77,17 @@
   }
 }
 
-.line {
+.line,
+.sectionDivider {
   color: $grey;
   background-color: $btngrey;
   font-size: 25px !important;
   font-weight: lighter !important;
   margin: 0 5px;
+}
+
+.sectionDivider {
+  background-color: $btngrey;
 }
 
 .video__ownerComment {
@@ -149,7 +154,6 @@
 .video__comment-form__btn:hover {
   background-color: rgb(8, 94, 212);
   color: white;
-  transition-duration: 1s;
 }
 
 .video__comment {
