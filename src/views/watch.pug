@@ -60,7 +60,7 @@ block content
         div.video__add-comments 
             form.video__comment-form#commentForm
                 img(src=loggedInUser.avatarUrl, crossorigin).comments__avatar
-                textarea.video__comment-form__text(cols="30", rows="20", placeholder="Write a nice comment..")
+                p.video__comment-form__text(cols="30", rows="20", placeholder="Write a nice comment..")
                 button.video__comment-form__btn Add comment
     div.video__comments
         ul
@@ -69,7 +69,7 @@ block content
                     div
                         img(src= comment.owner.avatarUrl, crossorigin).comments__avatar
                     div
-                    span.comment__owner #{comment.owner}          
+                    span.comment__owner #{comment.owner.name}          
                     span.comment__createdAt #{comment.createdAt.toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})}
                     span.comment__text #{comment.text}
                     if String(comment.owner._id) === String(loggedInUser._id)
