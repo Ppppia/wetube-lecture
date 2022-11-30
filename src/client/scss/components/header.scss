@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 header {
+  flex-wrap: nowrap;
   padding: 5px 50px;
   display: flex;
   justify-content: space-between;
