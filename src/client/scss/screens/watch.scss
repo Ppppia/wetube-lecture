@@ -51,14 +51,14 @@
     }
   }
   .video__icons {
-    display: flex;
+    display: inline-block;
     float: right;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-right: 5px;
   }
   .video__icons i {
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 10px 12px;
     font-size: 16px;
     background-color: $btngrey;
     border-radius: 25px;
