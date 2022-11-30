@@ -77,7 +77,7 @@
   }
 }
 .line {
-  color: rgba(0, 0, 0, 0.3);
+  color: $btngrey;
   font-size: 25px !important;
   font-weight: lighter !important;
   margin: 0 5px;
@@ -104,19 +104,63 @@
   background-color: rgb(231, 231, 231);
 }
 
-.video__comments {
+.video__add-comments {
+  margin-left: 10px;
+  .video__comment-form {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+  }
+  .video__comment-form__text {
+    width: 600px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.video__comment-form__btn {
+  appearance: none;
+  border-radius: 4px;
+  border: none;
+  margin-left: 20px;
+  font-size: 16px;
+  background-color: rgb(89, 178, 255);
+  padding: 10px 20px;
+  color: #030303;
+  cursor: pointer;
+}
+
+.video__comment {
   display: flex;
-  flex-direction: column;
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 15px;
-  .video__comment {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
-    color: $black;
-    margin-bottom: 10px;
+  align-items: center;
+  overflow: hidden;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 20px 0;
+  i.fas.fa-xmark {
+    margin-left: 20px;
+  }
+  .comment__owner {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+  .comment__createdAt {
+    padding: 0 5px;
+    font-size: 13px;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+}
+
+.video__comment__deleteBtn {
+  margin-left: 10px;
+  &:hover {
+    cursor: pointer;
   }
 }
