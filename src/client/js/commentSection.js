@@ -7,15 +7,27 @@ const addComment = (text, id) => {
   const newComment = document.createElement("li");
   newComment.dataset.id = id;
   newComment.className = "video__comment";
-  const icon = document.createElement("i");
-  icon.className = "fas fa-comment";
   const span = document.createElement("span");
   span.innerText = ` ${text}`;
+  const ownerAvatar = document.createElement("img");
+  ownerAvatar.setAttribute("src", comment.avatarUrl);
+  ownerAvatar.className = "comments__avatar";
+  const ownerNameSpan = document.createElement("span");
+  ownerNameSpan.className = "comment__owner";
+  ownerNameSpan.innerText = comment.ownername;
+  const commentCreate = document.createElement("span");
+  commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
+    "ko-kr",
+    { year: "numeric", month: "numeric", day: "numeric" }
+  );
+  commentCreate.className = "comment__createdAt";
   const span2 = document.createElement("span");
   span2.innerText = " ❌";
   span2.addEventListener("click", handleDelete);
-  newComment.appendChild(icon);
   newComment.appendChild(span);
+  newComment.appendChild(ownerAvatar);
+  newComment.appendChild(ownerNameSpan);
+  newComment.appendChild(commentCreate);
   newComment.append(span2);
   videoComments.prepend(newComment);
 };
