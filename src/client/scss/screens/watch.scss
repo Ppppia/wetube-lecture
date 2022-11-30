@@ -25,6 +25,7 @@
 
 .video__createInfo {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 6px;
   .video__avatar {
