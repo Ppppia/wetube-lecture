@@ -53,11 +53,10 @@
   .video__icons {
     display: flex;
     float: right;
-    margin-top: 8px;
+    margin-top: 7px;
     margin-right: 5px;
   }
-  .video__icons i,
-  .video__icons a {
+  .video__icons i {
     margin: 0 5px;
     padding: 10px;
     font-size: 16px;
@@ -66,8 +65,6 @@
   }
   .video__icons span {
     font-weight: 300;
-    background-color: $btngrey;
-    border-radius: 25px;
   }
 }
 
