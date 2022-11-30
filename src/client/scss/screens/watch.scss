@@ -53,20 +53,22 @@
   .video__icons {
     float: inline-end;
     justify-content: flex-end;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-right: 5px;
-  }
-  .video__icons i {
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: $btngrey;
-    border-radius: 25px;
-  }
-  .video__icons span {
-    font-weight: 300;
-    background-color: $btngrey;
-    border-radius: 25px;
+
+    .video__icons i,
+    .video__icons a {
+      margin: 0 5px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: $btngrey;
+      border-radius: 25px;
+    }
+    .video__icons span {
+      font-weight: 300;
+      background-color: $btngrey;
+      border-radius: 25px;
+    }
   }
 }
 
