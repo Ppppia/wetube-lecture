@@ -27,11 +27,11 @@ block content
                 a(href=`/users/${video.owner._id}`)
                     img(src=video.owner.avatarUrl, crossorigin).video__avatar
                     
-            div.video__owername
-                a(href=`/users/${video.owner._id}`)=video.owner.username
-                span.video__subscribe #{video.meta.views} subscribers
+                div.video__owername
+                    a(href=`/users/${video.owner._id}`)=video.owner.username
+                    span.video__subscribe #{video.meta.views} subscribers
           
-            fieldset.video__icons
+            div.video__icons
                     if String(video.owner._id) === String(loggedInUser._id)
                         i.fas.fa-pen
                             a(href=`${video.id}/edit`)
