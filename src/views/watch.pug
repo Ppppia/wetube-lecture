@@ -54,7 +54,7 @@ block content
             span.video-views #{video.meta.views} views |   
             span.video-createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})
             p.video__description=video.description
-        hr.line
+        hr.sectionDivider
 
     if loggedIn
         div.video__add-comments 
@@ -67,9 +67,9 @@ block content
             each comment in video.comments.reverse()
                 li.video__comment(data-id=comment.id)
                     div
-                        img(src= comment.avatarUrl, crossorigin).comments__avatar
+                        img(src= comment.owner.avatarUrl, crossorigin).comments__avatar
                     div
-                    span.comment__owner#commentOwnername=comment.ownername            
+                    span.comment__owner #{comment.owner.username}          
                     span.comment__createdAt #{comment.createdAt.toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})}
                     span.comment__text #{comment.text}
                     if String(comment.owner._id) === String(loggedInUser._id)
