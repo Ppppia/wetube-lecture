@@ -46,7 +46,9 @@
       font-weight: bold;
     }
     .video__subscribe {
+      display: flex !important;
       flex-direction: row !important;
+      align-items: center;
       font-size: 12px;
       color: rgb(121, 121, 121) !important;
       margin-top: 8px;
