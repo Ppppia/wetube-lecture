@@ -24,6 +24,10 @@ input:not(input[type="range"]) {
   background-color: white;
   color: $black;
 }
+input:not(input[type="range"]):focus {
+  background-color: rgba(214, 255, 120, 0.845);
+  transition: all 0.6s;
+}
 
 input[type="submit"] {
   padding: 15px 21px !important;
