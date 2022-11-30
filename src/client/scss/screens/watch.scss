@@ -127,9 +127,11 @@
     background-color: transparent;
     border: 0;
   }
+  .textarea {
+    resize: none;
+    width: 90%;
+  }
   .video__comment-form__text {
-    width: 1000px;
-    height: 25px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black;
