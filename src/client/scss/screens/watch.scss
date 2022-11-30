@@ -51,12 +51,11 @@
     }
   }
   .video__icons {
-    display: flex !important;
-    flex-direction: row !important;
-    float: right !important;
-    align-items: center !important;
     margin-top: 5px;
     margin-left: 5px;
+  }
+  .video__icons:first-child {
+    margin-left: 475px !important;
   }
   .video__icons i {
     margin: 0 5px;
@@ -77,8 +76,8 @@
 }
 .line {
   color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
-  font-size: 40px !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
   margin: 0 5px;
 }
 
