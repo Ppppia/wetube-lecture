@@ -51,8 +51,9 @@
     }
   }
   .video__icons {
+    float: inline-end;
     justify-content: flex-end;
-
+    margin-top: 10px;
     margin-right: 5px;
   }
   .video__icons i {
@@ -64,8 +65,6 @@
   }
   .video__icons span {
     font-weight: 300;
-    margin: 0 5px;
-    padding: 8px;
     background-color: $btngrey;
     border-radius: 25px;
   }
