@@ -90,6 +90,7 @@
   width: 97.5%;
   padding: 15px;
   border-radius: 10px;
+  margin-bottom: 10px;
   .video-views,
   .video-createdAt {
     font-weight: bold;
@@ -102,6 +103,14 @@
 .video__icons i:hover,
 .video__ownerComment:hover {
   background-color: rgb(231, 231, 231);
+}
+
+.comments__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 .video__add-comments {
