@@ -79,14 +79,14 @@
 
 .line,
 .sectionDivider {
-  color: $grey;
+  color: $btngrey;
   font-size: 25px !important;
   font-weight: lighter !important;
   margin: 0 5px;
 }
 
 .sectionDivider {
-  background-color: $btngrey;
+  background-color: $grey;
 }
 
 .video__ownerComment {
@@ -149,6 +149,7 @@
   padding: 5px 15px;
   color: $black;
   font-weight: bolder;
+  margin-right: 15px;
   cursor: pointer;
 }
 .video__comment-form__btn:hover {
