@@ -53,6 +53,8 @@
   .video__icons {
     margin-top: 5px;
     margin-left: 5px;
+    position: absolute;
+    float: right;
   }
 
   .video__icons i {
@@ -62,9 +64,7 @@
     background-color: $btngrey;
     border-radius: 25px;
   }
-  .video__icons i:first-child {
-    margin-left: 475px !important;
-  }
+
   .video__icons a {
     margin: 0 5px;
     font-size: 16px;
