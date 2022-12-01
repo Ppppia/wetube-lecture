@@ -69,7 +69,7 @@ block content
                 li.video__comment(data-id=comment.id)
                     div.comments__commentyByAvatar
                         img(src= comment.avatarUrl, crossorigin).comments__avatar
-                    div.comments__eachComment
+                    div
                         span.comment__owner=comment.ownername         
                         span.comment__createdAt #{comment.createdAt.toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})}
                         span.comment__text #{comment.text}

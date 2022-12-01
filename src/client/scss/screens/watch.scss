@@ -168,14 +168,10 @@
   font-size: 14px;
   color: $black;
   margin: 15px 0;
-  .comments__commentyByAvatar,
-  .comments__eachComment {
+  .comments__commentyByAvatar {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  .comments__eachComment {
-    margin-right: 15px;
   }
   .comment__owner {
     padding: 0 5px;
