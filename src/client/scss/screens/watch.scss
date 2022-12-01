@@ -118,25 +118,20 @@
   margin-right: 10px;
   background-color: ivory;
 }
-.video__comment-form {
-  width: 100%;
-}
+
 .video__add-comments {
-  margin-left: 15px;
   .video__comment-form {
     display: flex;
-    align-items: center;
+
     background-color: transparent;
     border: 0;
   }
   .video__comment-form__text {
-    width: 800px;
-    height: 20px;
+    height: 40px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black;
     color: $black;
-    margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.4rem;
   }
@@ -160,8 +155,6 @@
 }
 
 .video__comments {
-  margin-left: 10px;
-  margin-right: 10px;
   width: 100%;
   margin-top: 20px;
 }
