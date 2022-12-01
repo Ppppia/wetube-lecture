@@ -139,7 +139,6 @@
 
 .video__comment-form__btn {
   all: unset;
-  width: 80px;
   border-radius: 25px;
   border: none;
   font-size: 14px;
@@ -169,7 +168,8 @@
   font-size: 14px;
   color: $black;
   margin: 15px 0;
-  .comments__commentyByAvatar {
+  .comments__commentyByAvatar,
+  .comments__eachComment {
     display: flex;
     flex-direction: row;
     align-items: center;
