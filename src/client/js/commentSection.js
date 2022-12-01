@@ -27,9 +27,14 @@ const addComment = async (text, id) => {
   const p = document.createElement("p");
   p.className = "comment__text";
   p.innerText = ` ${text}`;
-  const span2 = document.createElement("span");
-  span.className = "video__comment-deleteBtn";
-  span2.innerText = " ❌";
+
+  const deleteIcon = document.createElement("i");
+  deleteIcon.className = "far fa-trash-alt";
+  /*
+  const p2 = document.createElement("p");
+  p.className = "video__comment-deleteBtn";
+  p2.innerText = " ❌";
+  */
 
   span2.addEventListener("click", handleDelete);
   newComment.appendChild(span);
@@ -40,7 +45,7 @@ const addComment = async (text, id) => {
   */
 
   newComment.appendChild(p);
-  newComment.append(span2);
+  newComment.append(deleteIcon);
   videoComments.prepend(newComment);
 };
 
