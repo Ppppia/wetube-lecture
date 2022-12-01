@@ -13,7 +13,7 @@ const addComment = async (text, id) => {
   ownerAvatar.className = "comments__avatar";
   const ownerNameSpan = document.createElement("span");
   ownerNameSpan.className = "comment__owner";
-  ownerNameSpan.innerText = await comment.ownername;
+  ownerNameSpan.innerText = comment.ownername;
   const commentCreate = document.createElement("span");
   commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
     "ko-kr",
@@ -28,9 +28,9 @@ const addComment = async (text, id) => {
 
   span2.addEventListener("click", handleDelete);
 
-  newComment.appendChild(ownerAvatar);
-  newComment.appendChild(ownerNameSpan);
-  newComment.appendChild(commentCreate);
+  newComment.append(ownerAvatar);
+  newComment.append(ownerNameSpan);
+  newComment.append(commentCreate);
   newComment.appendChild(span);
   newComment.append(span2);
   videoComments.prepend(newComment);
