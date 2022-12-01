@@ -32,6 +32,7 @@ block content
                     span.video__subscribe #{video.meta.views} subscribers
           
             div.video__icons
+                        span.video__subscribeBtn Subscribe
                     if String(video.owner._id) === String(loggedInUser._id)
                         i.fas.fa-pen
                             a(href=`${video.id}/edit`)
