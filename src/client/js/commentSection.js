@@ -63,12 +63,12 @@ const handleSubmit = async (event) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({ text: text }),
   });
   if (response.status === 201) {
     textarea.value = "";
-    const { text, newCommentId, comment, commentId } = await response.json();
-    addComment(text, newCommentId, comment, commentId);
+    const { newCommentId } = await response.json();
+    addComment(text, newCommentId);
   }
 };
 
