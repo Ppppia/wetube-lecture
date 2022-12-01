@@ -15,17 +15,10 @@ const addComment = async (text, id) => {
   ownerNameSpan.className = "comment__owner";
   ownerNameSpan.innerText = comment.ownername;
   const commentCreate = document.createElement("span");
-  commentCreate.innerText = new Date(comment.createdAt)
-    .toLocaleDateString("ko-kr", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    })
-    .toLocaleTimeString("kr-kr", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    });
+  commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
+    "ko-kr",
+    { year: "numeric", month: "numeric", day: "numeric" }
+  );
   commentCreate.className = "comment__createdAt";
 
   const span = document.createElement("span");
@@ -58,12 +51,12 @@ const handleSubmit = async (event) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({ text: text }),
   });
   if (response.status === 201) {
     textarea.value = "";
-    const { newCommentId } = await response.json();
-    addComment(text, newCommentId);
+    const { newCommentId, comment, commentId } = await response.json();
+    addComment(text, newCommentId, comment, commentId);
   }
 };
 
