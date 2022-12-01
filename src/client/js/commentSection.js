@@ -12,9 +12,9 @@ const addComment = (text, id, comment) => {
   ownerAvatar.setAttribute("src", comment.avatarUrl);
   ownerAvatar.className = "comments__avatar";
 
-  const ownerNameSpan = document.createElement("span");
-  ownerNameSpan.className = "comment__owner";
-  ownerNameSpan.innerText = comment.ownername;
+  const ownerUsername = document.createElement("span");
+  ownerUsername.className = "comment__owner";
+  ownerUsername.innerText = comment.ownername;
 
   const commentCreate = document.createElement("span");
   commentCreate.innerText = new Date(comment.createdAt).toLocaleTimeString(
@@ -30,22 +30,22 @@ const addComment = (text, id, comment) => {
   );
   commentCreate.className = "comment__createdAt";
 
-  const p = document.createElement("p");
-  p.className = "comment__text";
-  p.innerText = ` ${text}`;
+  const commentText = document.createElement("p");
+  commentText.className = "comment__text";
+  commentText.innerText = ` ${text}`;
 
-  const span2 = document.createElement("span");
-  span2.className = "video__comment-deleteBtn";
-  span2.innerText = " 🗑️";
+  const commentDeleteBtn = document.createElement("span");
+  commentDeleteBtn.className = "video__comment-deleteBtn";
+  commentDeleteBtn.innerText = " 🗑️";
 
-  span2.addEventListener("click", handleDelete);
+  commentDeleteBtn.addEventListener("click", handleDelete);
 
   newComment.appendChild(ownerAvatar);
-  newComment.appendChild(ownerNameSpan);
+  newComment.appendChild(ownerUsername);
   newComment.appendChild(commentCreate);
 
-  newComment.appendChild(p);
-  newComment.appendChild(span2);
+  newComment.appendChild(commentText);
+  newComment.appendChild(commentDeleteBtn);
   videoComments.prepend(newComment);
 };
 

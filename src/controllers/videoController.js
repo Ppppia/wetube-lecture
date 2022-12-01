@@ -149,8 +149,8 @@ export const createComment = async (req, res) => {
     text,
     owner: user._id,
     video: id,
-    ownername: user.username,
     avatarUrl: user.avatarUrl,
+    ownername: user.username,
   });
   video.comments.push(comment._id);
   video.save();
