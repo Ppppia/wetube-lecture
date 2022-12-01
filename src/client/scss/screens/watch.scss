@@ -121,13 +121,13 @@
 
 .video__add-comments {
   .video__comment-form {
-    width: 100%;
     display: flex;
     align-items: center;
     background-color: transparent;
     border: 0;
   }
   .video__comment-form__text {
+    height: 40px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black;
@@ -135,13 +135,6 @@
     font-size: 14px;
     line-height: 1.4rem;
   }
-}
-
-textarea {
-  width: 80%;
-  height: 35px;
-  padding: 10px;
-  box-sizing: border-box;
 }
 
 .video__comment-form__btn {
@@ -175,7 +168,11 @@ textarea {
   font-size: 14px;
   color: $black;
   margin: 15px 0;
-
+  .comments__commentyByAvatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .comment__owner {
     padding: 0 5px;
     font-size: 13px;
