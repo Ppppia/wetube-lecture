@@ -52,13 +52,19 @@
       color: rgb(121, 121, 121) !important;
       margin-top: 8px;
     }
-    .video__subscribeBtn {
-      background-color: $black;
-      color: white;
-      margin: 0 5px;
-      font-size: 16px;
-    }
   }
+
+  .video__subscribeBtn {
+    background-color: $black;
+    color: white;
+    padding: 12px 12px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+
+  .video__subscribeBtn:hover {
+  }
+
   .video__icons {
     margin-top: 5px;
     margin-left: 5px;
