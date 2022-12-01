@@ -74,8 +74,7 @@ block content
                         span.comment__createdAt #{comment.createdAt.toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})}
                         p.comment__text #{comment.text}
                         if String(comment.owner._id) === String(loggedInUser._id)
-                            span.video__comment-deleteBtn
-                                i.far.fa-trash-alt
+                            p.video__comment-deleteBtn ❌
 
 
 block scripts
