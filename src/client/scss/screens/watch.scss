@@ -139,6 +139,7 @@
 
 .video__comment-form__btn {
   all: unset;
+  width: 80px;
   border-radius: 25px;
   border: none;
   font-size: 14px;
@@ -173,6 +174,9 @@
     flex-direction: row;
     align-items: center;
   }
+  .comments__eachComment {
+    margin-right: 15px;
+  }
   .comment__owner {
     padding: 0 5px;
     font-size: 13px;
@@ -186,7 +190,6 @@
 }
 
 .video__comment__deleteBtn {
-  margin-left: 20px;
   &:hover {
     cursor: pointer;
   }

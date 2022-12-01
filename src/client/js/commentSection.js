@@ -24,9 +24,9 @@ const addComment = async (text, id) => {
   */
   const icon = document.createElement("i");
   icon.className = "fas fa-comment";
-  const p = document.createElement("p");
-  p.className = "comment__text";
-  p.innerText = ` ${text}`;
+  const span = document.createElement("span");
+  span.className = "comment__text";
+  span.innerText = ` ${text}`;
   const span2 = document.createElement("span");
   span2.className = "video__comment-deleteBtn";
   span2.innerText = " ❌";
@@ -39,7 +39,7 @@ const addComment = async (text, id) => {
   newComment.appendChild(commentCreate);
   */
 
-  newComment.appendChild(p);
+  newComment.appendChild(span);
   newComment.append(span2);
   videoComments.prepend(newComment);
 };
