@@ -71,7 +71,7 @@ block content
                         img(src= comment.avatarUrl, crossorigin).comments__avatar
                     div.comments__eachComment
                         span.comment__owner=comment.ownername         
-                        span.comment__createdAt #{comment.createdAt.toLocaleString("en-US",timeZone: 'Korea/Seoul',  {year: 'numeric', month: 'numeric', day: 'numeric', hour: "2-digit", minute: "2-digit", second:"2-digit"})}
+                        span.comment__createdAt #{comment.createdAt.toLocaleString("en-US",timeZone: 'UTC+9',  {year: 'numeric', month: 'numeric', day: 'numeric', hour: "2-digit", minute: "2-digit", second:"2-digit"})}
                         p.comment__text #{comment.text}
                     if String(comment.owner._id) === String(loggedInUser._id)
                             span.video__comment-deleteBtn ❌
