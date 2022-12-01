@@ -67,8 +67,8 @@ const handleSubmit = async (event) => {
   });
   if (response.status === 201) {
     textarea.value = "";
-    const { newCommentId } = await response.json();
-    addComment(text, newCommentId);
+    const { newCommentId, comment, commentId } = await response.json();
+    addComment(text, newCommentId, comment, commentId);
   }
 };
 
