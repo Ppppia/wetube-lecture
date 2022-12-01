@@ -19,7 +19,7 @@ const addComment = async (text, id) => {
   span2.innerText = " 🗑️";
 
   span2.addEventListener("click", handleDelete);
-
+  newComment.appendChild(icon);
   newComment.appendChild(p);
   newComment.append(span2);
   videoComments.prepend(newComment);
