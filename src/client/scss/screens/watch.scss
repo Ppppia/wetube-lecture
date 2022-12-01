@@ -103,7 +103,6 @@
   }
   .video__description {
     margin-top: 3px;
-    overflow: hidden;
   }
 }
 
@@ -179,6 +178,9 @@
     padding: 0 2px;
     font-size: 12px;
     color: rgb(130, 130, 130);
+  }
+  .comment__text {
+    display: block;
   }
 }
 
