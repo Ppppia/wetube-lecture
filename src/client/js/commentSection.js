@@ -40,12 +40,12 @@ const addComment = (text, id, comment) => {
 
   span2.addEventListener("click", handleDelete);
 
-  newComment.append(ownerAvatar);
-  newComment.append(ownerNameSpan);
-  newComment.append(commentCreate);
+  newComment.appendChild(ownerAvatar);
+  newComment.appendChild(ownerNameSpan);
+  newComment.appendChild(commentCreate);
 
-  newComment.append(p);
-  newComment.append(span2);
+  newComment.appendChild(p);
+  newComment.appendChild(span2);
   videoComments.prepend(newComment);
 };
 
