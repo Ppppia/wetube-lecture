@@ -40,13 +40,13 @@ const addComment = async (text, id) => {
 
   span2.addEventListener("click", handleDelete);
 
-  newComment.appendChild(ownerAvatar);
-  newComment.appendChild(ownerNameSpan);
-  newComment.appendChild(commentCreate);
+  await newComment.appendChild(ownerAvatar);
+  await newComment.appendChild(ownerNameSpan);
+  await newComment.appendChild(commentCreate);
 
-  newComment.appendChild(p);
-  newComment.appendChild(span2);
-  videoComments.prepend(newComment);
+  await newComment.appendChild(p);
+  await newComment.appendChild(span2);
+  await videoComments.prepend(newComment);
 };
 
 const handleSubmit = async (event) => {
