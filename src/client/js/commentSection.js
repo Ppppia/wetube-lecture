@@ -15,10 +15,17 @@ const addComment = async (text, id) => {
   ownerNameSpan.className = "comment__owner";
   ownerNameSpan.innerText = comment.ownername;
   const commentCreate = document.createElement("span");
-  commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
-    "ko-kr",
-    { year: "numeric", month: "numeric", day: "numeric" }
-  );
+  commentCreate.innerText = new Date(comment.createdAt)
+    .toLocaleDateString("ko-kr", {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    })
+    .toLocaleTimeString("en-kr", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
   commentCreate.className = "comment__createdAt";
 
   const span = document.createElement("span");
