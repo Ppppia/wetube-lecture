@@ -2,7 +2,7 @@ const videoContainer = document.getElementById("videoContainer");
 const form = document.getElementById("commentForm");
 const deleteBtn = document.querySelectorAll(".video__comment-deleteBtn");
 
-const addComment = (text, id) => {
+const addComment = async (text, id) => {
   const videoComments = document.querySelector(".video__comments ul");
   const newComment = document.createElement("li");
   newComment.dataset.id = id;
@@ -13,7 +13,7 @@ const addComment = (text, id) => {
   ownerAvatar.className = "comments__avatar";
   const ownerNameSpan = document.createElement("span");
   ownerNameSpan.className = "comment__owner";
-  ownerNameSpan.innerText = comment.ownername;
+  ownerNameSpan.innerText = await comment.ownername;
   const commentCreate = document.createElement("span");
   commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
     "ko-kr",
