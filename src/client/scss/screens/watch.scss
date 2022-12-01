@@ -112,13 +112,15 @@
 }
 
 .comments__avatar {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color: blue;
+  background-color: ivory;
 }
-
+.video__comment-form {
+  width: 100%;
+}
 .video__add-comments {
   margin-left: 15px;
   .video__comment-form {
