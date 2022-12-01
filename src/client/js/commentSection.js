@@ -2,7 +2,7 @@ const videoContainer = document.getElementById("videoContainer");
 const form = document.getElementById("commentForm");
 const deleteBtn = document.querySelectorAll(".video__comment-deleteBtn");
 
-const addComment = async (text, id) => {
+const addComment = (text, id) => {
   const videoComments = document.querySelector(".video__comments ul");
   const newComment = document.createElement("li");
   newComment.dataset.id = id;
