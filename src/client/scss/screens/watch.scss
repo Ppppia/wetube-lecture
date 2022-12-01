@@ -127,6 +127,7 @@
     border: 0;
   }
   .video__comment-form__text {
+    width: 800px;
     height: 40px;
     background-color: transparent;
     border: none;
@@ -148,6 +149,7 @@
   font-weight: bolder;
   margin-left: 10px;
   height: 20px !important;
+  width: 50px !important;
   cursor: pointer;
 }
 .video__comment-form__btn:hover {
