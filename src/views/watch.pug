@@ -62,7 +62,7 @@ block content
                 img(src=loggedInUser.avatarUrl, crossorigin).comments__avatar
                 div.video__comment-form__text(contenteditable="true", placeholder="Write a nice comment..")
                 button.video__comment-form__btn Add comment
-    
+        hr
     div.video__comments
         ul
             each comment in video.comments.reverse()
