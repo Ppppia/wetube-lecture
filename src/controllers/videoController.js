@@ -153,7 +153,7 @@ export const createComment = async (req, res) => {
     avatarUrl: user.avatarUrl,
   });
   video.comments.push(comment._id);
-  await video.save();
+  video.save();
   return res.status(201).json({ newCommentId: comment._id, comment });
 };
 
