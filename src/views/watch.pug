@@ -60,7 +60,7 @@ block content
         div.video__add-comments 
             form.video__comment-form#commentForm
                 img(src=loggedInUser.avatarUrl, crossorigin).comments__avatar
-                textarea.video__comment-form__text(cols="2000", rows="20", placeholder="Write a nice comment..")
+                div.video__comment-form__text(contenteditable="true", placeholder="Write a nice comment..")
                 button.video__comment-form__btn Add comment
     
     div.video__comments
