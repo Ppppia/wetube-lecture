@@ -123,6 +123,7 @@
   .video__comment-form {
     width: 100%;
     display: flex;
+    align-items: center;
     background-color: transparent;
     border: 0;
   }
@@ -180,7 +181,8 @@
     color: rgb(130, 130, 130);
   }
   .comment__text {
-    display: block;
+    display: inline-block;
+    justify-content: flex-start;
   }
 }
 
