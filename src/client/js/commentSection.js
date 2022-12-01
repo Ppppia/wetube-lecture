@@ -27,6 +27,7 @@ const addComment = async (text, id) => {
   const p = document.createElement("p");
   p.className = "comment__text";
   p.innerText = ` ${text}`;
+
   const span2 = document.createElement("span");
   span2.className = "video__comment-deleteBtn";
   span2.innerText = " ❌";
