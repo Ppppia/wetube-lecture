@@ -57,17 +57,17 @@
   .video__subscribeBtn {
     background-color: $black;
     color: white;
-    padding: 12px 12px;
+    padding: 10px 10px;
     font-size: 16px;
     border-radius: 25px;
+    margin: 5px 0px 5px 20px;
   }
 
   .video__subscribeBtn:hover {
   }
 
   .video__icons {
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 5px 0;
   }
 
   .video__icons i {
