@@ -72,9 +72,9 @@ block content
                     div
                         span.comment__owner=comment.ownername         
                         span.comment__createdAt #{comment.createdAt.toLocaleDateString("ko-kr", {year: 'numeric', month: 'numeric', day: 'numeric'})}
-                        span.comment__text #{comment.text}
-                    if String(comment.owner._id) === String(loggedInUser._id)
-                        span.video__comment-deleteBtn ❌
+                        p.comment__text #{comment.text}
+                        if String(comment.owner._id) === String(loggedInUser._id)
+                            span.video__comment-deleteBtn ❌
 
 
 block scripts
