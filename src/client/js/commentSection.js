@@ -27,10 +27,9 @@ const addComment = async (text, id) => {
   const p = document.createElement("p");
   p.className = "comment__text";
   p.innerText = ` ${text}`;
-
-  const p2 = document.createElement("p");
-  p2.className = "video__comment-deleteBtn";
-  p2.innerText = " ❌";
+  const span2 = document.createElement("span");
+  span.className = "video__comment-deleteBtn";
+  span2.innerText = " ❌";
 
   span2.addEventListener("click", handleDelete);
   newComment.appendChild(span);
@@ -41,7 +40,7 @@ const addComment = async (text, id) => {
   */
 
   newComment.appendChild(p);
-  newComment.append(p2);
+  newComment.append(span2);
   videoComments.prepend(newComment);
 };
 
