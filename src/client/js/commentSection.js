@@ -32,14 +32,14 @@ const addComment = async (text, id) => {
   span2.innerText = " ❌";
 
   span2.addEventListener("click", handleDelete);
-  newComment.appendChild(p);
+
   /*
   newComment.appendChild(ownerAvatar);
   newComment.appendChild(ownerNameSpan);
   newComment.appendChild(commentCreate);
   */
 
-  newComment.appendChild(span);
+  newComment.appendChild(p);
   newComment.append(span2);
   videoComments.prepend(newComment);
 };

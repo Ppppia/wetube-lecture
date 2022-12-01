@@ -128,7 +128,6 @@
     border: 0;
   }
   .video__comment-form__text {
-    height: 40px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black;
@@ -136,6 +135,13 @@
     font-size: 14px;
     line-height: 1.4rem;
   }
+}
+
+textarea {
+  width: 80%;
+  height: 35px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .video__comment-form__btn {
