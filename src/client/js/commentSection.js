@@ -40,6 +40,10 @@ const addComment = async (text, id) => {
 
   span2.addEventListener("click", handleDelete);
 
+  newComment.appendChild(ownerAvatar);
+  newComment.appendChild(ownerNameSpan);
+  newComment.appendChild(commentCreate);
+
   newComment.appendChild(p);
   newComment.appendChild(span2);
   videoComments.prepend(newComment);
