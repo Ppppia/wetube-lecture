@@ -8,16 +8,16 @@ const addComment = async (text, id) => {
   newComment.dataset.id = id;
   newComment.className = "video__comment";
 
-  const owenrAvatar = document.createElement("img");
-  owenrAvatar.setAttribute("src", comment.avatarUrl);
-  owenrAvatar.className = "comments__avatar";
+  const ownerAvatar = document.createElement("img");
+  ownerAvatar.setAttribute("src", comment.avatarUrl);
+  ownerAvatar.className = "comments__avatar";
 
   const ownerNameSpan = document.createElement("span");
   ownerNameSpan.className = "comment__owner";
   ownerNameSpan.innerText = comment.ownername;
 
-  const commnetCreate = document.createElement("span");
-  commnetCreate.innerText = new Date(comment.createdAt).toLocaleTimeString(
+  const commentCreate = document.createElement("span");
+  commentCreate.innerText = new Date(comment.createdAt).toLocaleTimeString(
     "ko-KR",
     {
       year: "numeric",
@@ -28,7 +28,7 @@ const addComment = async (text, id) => {
       second: "2-digit",
     }
   );
-  commnetCreate.className = "comment__createdAt";
+  commentCreate.className = "comment__createdAt";
 
   const p = document.createElement("p");
   p.className = "comment__text";
@@ -41,7 +41,7 @@ const addComment = async (text, id) => {
   span2.addEventListener("click", handleDelete);
 
   newComment.appendChild(p);
-  newComment.append(span2);
+  newComment.appendChild(span2);
   videoComments.prepend(newComment);
 };
 
