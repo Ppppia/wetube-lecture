@@ -8,12 +8,12 @@ const addComment = async (text, id) => {
   newComment.dataset.id = id;
   newComment.className = "video__comment";
 
-  const ownerAvatar = document.createElement("img");
+  const ownerAvatar = await document.createElement("img");
   ownerAvatar.setAttribute("src", comment.avatarUrl);
   ownerAvatar.className = "comments__avatar";
-  const ownerNameSpan = document.createElement("span");
+  const ownerNameSpan = await document.createElement("span");
   ownerNameSpan.className = "comment__owner";
-  ownerNameSpan.innerText = comment.ownername;
+  ownerNameSpan.innerText = await comment.ownername;
   const commentCreate = document.createElement("span");
   commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
     "ko-kr",
@@ -51,12 +51,12 @@ const handleSubmit = async (event) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text: text }),
+    body: JSON.stringify({ text }),
   });
   if (response.status === 201) {
     textarea.value = "";
-    const { newCommentId, comment, commentId } = await response.json();
-    addComment(text, newCommentId, comment, commentId);
+    const { newCommentId } = await response.json();
+    addComment(text, newCommentId);
   }
 };
 
