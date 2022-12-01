@@ -21,7 +21,7 @@ const addComment = async (text, id) => {
       month: "numeric",
       day: "numeric",
     })
-    .toLocaleTimeString("en-kr", {
+    .toLocaleTimeString("kr-kr", {
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
