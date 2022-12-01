@@ -103,6 +103,7 @@
   }
   .video__description {
     margin-top: 3px;
+    overflow: hidden;
   }
 }
 
@@ -121,8 +122,8 @@
 
 .video__add-comments {
   .video__comment-form {
+    width: 100%;
     display: flex;
-
     background-color: transparent;
     border: 0;
   }
@@ -146,7 +147,8 @@
   padding: 5px 15px;
   color: $black;
   font-weight: bolder;
-  margin-left: 15px;
+  margin-left: 10px;
+  height: 20px !important;
   cursor: pointer;
 }
 .video__comment-form__btn:hover {
@@ -166,21 +168,22 @@
   overflow: hidden;
   font-size: 14px;
   color: $black;
-  margin: 20px 0;
+  margin: 15px 0;
 
   .comment__owner {
     padding: 0 5px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold !important;
   }
   .comment__createdAt {
-    padding: 0 5px;
-    font-size: 13px;
+    padding: 0 2px;
+    font-size: 12px;
     color: rgb(130, 130, 130);
   }
 }
 
 .video__comment__deleteBtn {
-  margin-left: 10px;
+  margin-left: 20px;
   &:hover {
     cursor: pointer;
   }
