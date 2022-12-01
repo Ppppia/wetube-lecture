@@ -40,9 +40,9 @@ const addComment = (text, id, comment) => {
 
   span2.addEventListener("click", handleDelete);
 
-  newComment.appendChild(ownerAvatar);
-  newComment.appendChild(ownerNameSpan);
-  newComment.appendChild(commentCreate);
+  newComment.append(ownerAvatar);
+  newComment.append(ownerNameSpan);
+  newComment.append(commentCreate);
 
   newComment.appendChild(p);
   newComment.appendChild(span2);
