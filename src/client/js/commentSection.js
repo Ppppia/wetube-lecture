@@ -22,15 +22,17 @@ const addComment = async (text, id) => {
   commentCreate.className = "comment__createdAt";
 
   const span = document.createElement("span");
+  span.className = "comment__text";
   span.innerText = ` ${text}`;
   const span2 = document.createElement("span");
+  span.className = "video__comment-deleteBtn";
   span2.innerText = " ❌";
 
   span2.addEventListener("click", handleDelete);
 
-  newComment.append(ownerAvatar);
-  newComment.append(ownerNameSpan);
-  newComment.append(commentCreate);
+  newComment.appendChild(ownerAvatar);
+  newComment.appendChild(ownerNameSpan);
+  newComment.appendChild(commentCreate);
   newComment.appendChild(span);
   newComment.append(span2);
   videoComments.prepend(newComment);
