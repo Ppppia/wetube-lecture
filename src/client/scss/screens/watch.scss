@@ -120,6 +120,7 @@
 }
 
 .video__add-comments {
+  float: left;
   .video__comment-form {
     display: flex;
     align-items: center;
@@ -127,8 +128,7 @@
     border: 0;
   }
   .video__comment-form__text {
-    width: 800px;
-    height: 40px;
+    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black;
