@@ -17,7 +17,17 @@ const addComment = (text, id, comment) => {
   ownerUsername.innerText = comment.ownername;
 
   const commentCreate = document.createElement("span");
-  commentCreate.innerText = new Date(comment.createdAt).toLocaleTimeString();
+  commentCreate.innerText = new Date(comment.createdAt).toLocaleTimeString(
+    "ko-KR",
+    {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    }
+  );
   commentCreate.className = "comment__createdAt";
 
   const commentText = document.createElement("p");
