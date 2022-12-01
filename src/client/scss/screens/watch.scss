@@ -128,7 +128,7 @@
     border: 0;
   }
   .video__comment-form__text {
-    width: 100%;
+    width: 12000px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $black;
@@ -136,6 +136,11 @@
     font-size: 14px;
     line-height: 1.4rem;
   }
+}
+.video__comment-form__text:focus {
+  border: none !important;
+  background-color: rgba(215, 255, 120, 0.715);
+  transition: all 0.6s;
 }
 
 .video__comment-form__btn {
