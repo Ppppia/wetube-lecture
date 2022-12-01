@@ -2,7 +2,7 @@ const videoContainer = document.getElementById("videoContainer");
 const form = document.getElementById("commentForm");
 const deleteBtn = document.querySelectorAll(".video__comment-deleteBtn");
 
-const addComment = (text, id) => {
+const addComment = (text, id, comment) => {
   const videoComments = document.querySelector(".video__comments ul");
   const newComment = document.createElement("li");
   newComment.dataset.id = id;
@@ -66,8 +66,8 @@ const handleSubmit = async (event) => {
   });
   if (response.status === 201) {
     textarea.value = "";
-    const { newCommentId } = await response.json();
-    addComment(text, newCommentId);
+    const { newCommentId, comment, commentId } = await response.json();
+    addComment(text, newCommentId, comment, commentId);
   }
 };
 
