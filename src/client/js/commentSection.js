@@ -8,19 +8,22 @@ const addComment = async (text, id) => {
   newComment.dataset.id = id;
   newComment.className = "video__comment";
 
-  const ownerAvatar = await document.createElement("img");
+  /*
+  const ownerAvatar = document.createElement("img");
   ownerAvatar.setAttribute("src", comment.avatarUrl);
   ownerAvatar.className = "comments__avatar";
-  const ownerNameSpan = await document.createElement("span");
+  const ownerNameSpan = document.createElement("span");
   ownerNameSpan.className = "comment__owner";
-  ownerNameSpan.innerText = await comment.ownername;
+  ownerNameSpan.innerText = comment.ownername;
   const commentCreate = document.createElement("span");
   commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
     "ko-kr",
     { year: "numeric", month: "numeric", day: "numeric" }
   );
   commentCreate.className = "comment__createdAt";
-
+  */
+  const icon = document.createElement("i");
+  icon.className = "fas fa-comment";
   const span = document.createElement("span");
   span.className = "comment__text";
   span.innerText = ` ${text}`;
@@ -29,10 +32,13 @@ const addComment = async (text, id) => {
   span2.innerText = " ❌";
 
   span2.addEventListener("click", handleDelete);
-
+  newComment.appendChild(span);
+  /*
   newComment.appendChild(ownerAvatar);
   newComment.appendChild(ownerNameSpan);
   newComment.appendChild(commentCreate);
+  */
+
   newComment.appendChild(span);
   newComment.append(span2);
   videoComments.prepend(newComment);
