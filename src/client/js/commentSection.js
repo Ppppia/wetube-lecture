@@ -8,6 +8,7 @@ const addComment = async (text, id) => {
   newComment.dataset.id = id;
   newComment.className = "video__comment";
 
+  /*
   const ownerAvatar = document.createElement("img");
   ownerAvatar.setAttribute("src", comment.avatarUrl);
   ownerAvatar.className = "comments__avatar";
@@ -15,20 +16,12 @@ const addComment = async (text, id) => {
   ownerNameSpan.className = "comment__owner";
   ownerNameSpan.innerText = comment.ownername;
   const commentCreate = document.createElement("span");
-  commentCreate.innerText = new Date(comment.createdAt).toLocaleTimeString(
-    "ko-KR",
-    { timeZone: "UTC+0900" },
-    {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    }
+  commentCreate.innerText = new Date(comment.createdAt).toLocaleDateString(
+    "ko-kr",
+    { year: "numeric", month: "numeric", day: "numeric" }
   );
   commentCreate.className = "comment__createdAt";
-
+  */
   const icon = document.createElement("i");
   icon.className = "fas fa-comment";
   const p = document.createElement("p");
@@ -41,9 +34,11 @@ const addComment = async (text, id) => {
 
   span2.addEventListener("click", handleDelete);
 
+  /*
   newComment.appendChild(ownerAvatar);
   newComment.appendChild(ownerNameSpan);
   newComment.appendChild(commentCreate);
+  */
 
   newComment.appendChild(p);
   newComment.append(span2);
@@ -63,12 +58,12 @@ const handleSubmit = async (event) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text: text }),
+    body: JSON.stringify({ text }),
   });
   if (response.status === 201) {
     textarea.value = "";
-    const { newCommentId, comment, commentId } = await response.json();
-    addComment(text, newCommentId, comment, commentId);
+    const { newCommentId } = await response.json();
+    addComment(text, newCommentId);
   }
 };
 
